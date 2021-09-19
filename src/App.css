@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+html {
+    font-size: 100% = 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right,  yellow,orange);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+h1{
+    margin: 3rem auto;
+    text-align: center;
+}
+form {
+    display: flex;
+}
+input {
+    padding: .2rem;
+    font-size: 120%;
+}
+button{
+    width: 2rem;
+    height: 2rem;
+    transition-duration: .1s;
+}
+select{
+    padding: .2rem;
+    font-size: 120%;
+    min-height: 100%;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.todo{
+    margin: .8rem auto;
+    min-width: 100%;
+    display: flex;
+    list-style: none;
+}
+.todo-button:hover{
+    background-color: chocolate;
+    transition:.2s ease-out;
+}
+.todo-item {
+    padding-top: .3rem;
+    background-color: honeydew;
+    min-width: 80%;
+}
+.todo-list{
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.trash-btn{
+    background-color: rgb(255, 138, 102);
+    float: right;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.trash-btn:hover{background-color: red;}
+.complete-btn{
+    background-color: rgb(61, 211, 61);
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.complete-btn:hover{background-color: green;}
